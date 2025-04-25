@@ -51,7 +51,7 @@ const Hero = () => {
                   <SelectValue placeholder="Select specialty" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Specialties</SelectItem>
+                  <SelectItem value="all">All Specialties</SelectItem>
                   {specialties.map((specialty) => (
                     <SelectItem key={specialty} value={specialty}>
                       {specialty}
@@ -68,7 +68,7 @@ const Hero = () => {
                   <SelectValue placeholder="Select location" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Locations</SelectItem>
+                  <SelectItem value="all">All Locations</SelectItem>
                   {locations.map((location) => (
                     <SelectItem key={location} value={location}>
                       {location}
